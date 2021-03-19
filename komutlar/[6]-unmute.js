@@ -52,7 +52,7 @@ let tumaylar = {
 let aylar = tumaylar; 
        {
 message.react('✅')
-client.channels.cache.get(MuteLog).send(new MessageEmbed().setTitle(`Bir Üye Metin Kanallarından Susturulması Kalktı.`).setColor("GREEN").setTimestamp().setDescription(`  \n\n Yetkili: ${message.author} (\`${message.author.id}\`) \n Kullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`)\nTarih: \`${moment(Date.now()).add(10,"hours").format("HH:mm:ss DD MMMM YYYY")}\``));
+client.channels.cache.get(MuteLog).send(new MessageEmbed().setTitle(`Bir Üye Metin Kanallarından Susturulması Kalktı.`).setColor("GREEN").setTimestamp().setDescription(`  \n\n Yetkili: ${message.author} (\`${message.author.id}\`) \n Kullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`)`));
 mute.roles.remove(manager.Role.MuteRolID)
 }}}}
 
