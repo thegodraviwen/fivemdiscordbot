@@ -36,7 +36,7 @@ let sebep = args.splice(1).join(" ");
 if(!sebep) return message.channel.send(new MessageEmbed().setDescription(`${message.author}, Bir sebep belirtmelisin.`).setColor("RED").setTimestamp()).then(x => x.delete({timeout: 6500}));
 
 message.react('✅')
-client.channels.cache.get(VMuteLog).send(new MessageEmbed().setTitle(`Bir Üye Sesli Kanallarından Susturulması Kalktı.`).setColor("GREEN").setTimestamp().setDescription(` \n\n Yetkili: ${message.author} (\`${message.author.id}\`) \n Kullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`) \nTarih: \`${moment(Date.now()).add(10,"hours").format("HH:mm:ss DD MMMM YYYY")}\``))
+client.channels.cache.get(VMuteLog).send(new MessageEmbed().setTitle(`Bir Üye Sesli Kanallarından Susturulması Kalktı.`).setColor("GREEN").setTimestamp().setDescription(` \n\n Yetkili: ${message.author} (\`${message.author.id}\`) \n Kullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`) `))
 kullanici.voice.setMute(false);  
 
 }
