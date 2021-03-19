@@ -115,7 +115,7 @@ Kullanıcı: <@${member.id}> (\`${member.id}\`)
 Süre: \`${time}\`
 Mute Atılma Saati: \`${muteatılma}\`
 Mute Bitiş Saati: \`${mutebitiş}\`
-Tarih: \`${moment(Date.now()).format("DD")} ${aylar[moment(Date.now()).format("MM")]} ${moment(Date.now()).add(10,"hours").format("YYYY HH:mm:ss")}\``)
+`)
 );
 }, ms(zaman));
         
