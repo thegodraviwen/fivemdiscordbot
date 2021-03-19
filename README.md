@@ -24,7 +24,7 @@ Modülleri indirmek için sadece terminale npm i yazmanız yeterlidir.
 
 Striga Code Discord = https://discord.com/invite/striga
 
-Kişisel Sunucum = 
+Kişisel Sunucum =  https://discord.gg/fDyVeBpJ4n
 
 Sunucularına gelip destek alabilirsin.
 
