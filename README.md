@@ -20,7 +20,7 @@ Sadece Manager dosyasının içerisinde ki system.json ve manager.json doldurup 
 
 # Dosyalar MIT Lisansı ile şahsıma lisanslanmıştır. Herhangi satış durumda gerekli işlemlere başvurulcaktır.
 
-Striga Code Discord = discord.gg/striga
+Striga Code Discord = https://discord.com/invite/striga
 
 Kişisel Sunucum = 
 
