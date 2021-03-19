@@ -68,10 +68,10 @@ kullanici.roles.cache.has(manager.Role.JailRolID) ? kullanici.roles.set([manager
 kullanici.roles.cache.forEach(r => {
 data.set(`${message.guild.id}.jail.${kullanici.id}.roles.${r.id}`, r.id )})
 moment.locale("tr");
-client.channels.cache.get(JailLog).send(new MessageEmbed().setTitle(`Bir Üye Cezalandırıldı !`).setColor("RANDOM").setTimestamp().setDescription(`  \n\nYetkili: ${message.author} (\`${message.author.id}\`)\nKullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`)\nSüre: \`${time}\` \nSebep: \`${sebep}\` \n Jail Atılma Saati: \`${jailatılma}\` \n Jail Bitiş Saati: \`${jailbitiş}\` \n Tarih: \`${moment(Date.now()).add(10,"hours").format("HH:mm:ss DD MMMM YYYY")}\``));
+client.channels.cache.get(JailLog).send(new MessageEmbed().setTitle(`Bir Üye Cezalandırıldı !`).setColor("RANDOM").setTimestamp().setDescription(`  \n\nYetkili: ${message.author} (\`${message.author.id}\`)\nKullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`)\nSüre: \`${time}\` \nSebep: \`${sebep}\` \n Jail Atılma Saati: \`${jailatılma}\` \n Jail Bitiş Saati: \`${jailbitiş}\` \n `));
 setTimeout(async () =>{
 kullanici.roles.remove(manager.Role.JailRolID)
-client.channels.cache.get(JailLog).send(new MessageEmbed().setTitle(`Bir Üyenin Cezası Bitti.`).setColor("RANDOM").setTimestamp().setDescription(`  \n\n Yetkili: ${message.author} (\`${message.author.id}\`) \n Kullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`)\n  \nSüre: \`${time}\` \n Jail Atılma Saati: \`${jailatılma}\` \n Jail Bitiş Saati: \`${jailbitiş}\` \nTarih: \`${moment(Date.now()).add(10,"hours").format("HH:mm:ss DD MMMM YYYY")}\``));
+client.channels.cache.get(JailLog).send(new MessageEmbed().setTitle(`Bir Üyenin Cezası Bitti.`).setColor("RANDOM").setTimestamp().setDescription(`  \n\n Yetkili: ${message.author} (\`${message.author.id}\`) \n Kullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`)\n  \nSüre: \`${time}\` \n Jail Atılma Saati: \`${jailatılma}\` \n Jail Bitiş Saati: \`${jailbitiş}\` `));
 }, ms(zaman));
             setTimeout(async () =>{
 message.guild.roles.cache.forEach(async r => {
