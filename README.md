@@ -18,6 +18,8 @@ RESTART komutları bulunmaktadır.
 
 Sadece Manager dosyasının içerisinde ki system.json ve manager.json doldurup start vermeniz yeterlidir.
 
+Modülleri indirmek için sadece terminale npm i yazmanız yeterlidir.
+
 # Dosyalar MIT Lisansı ile şahsıma lisanslanmıştır. Herhangi satış durumda gerekli işlemlere başvurulcaktır.
 
 Striga Code Discord = https://discord.com/invite/striga
