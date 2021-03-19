@@ -68,7 +68,7 @@ let tumaylar = {
 let aylar = tumaylar;
 
 message.react('✅')
-client.channels.cache.get(JailLog).send(new MessageEmbed().setTitle(`Bir Üyenin Cezası Bitirildi.`).setColor("GREEN").setTimestamp().setDescription(` \n\n Yetkili: ${message.author} (\`${message.author.id}\`) \n Kullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`) \nTarih: \`${moment(Date.now()).add(10,"hours").format("HH:mm:ss DD MMMM YYYY")}\``));
+client.channels.cache.get(JailLog).send(new MessageEmbed().setTitle(`Bir Üyenin Cezası Bitirildi.`).setColor("GREEN").setTimestamp().setDescription(` \n\n Yetkili: ${message.author} (\`${message.author.id}\`) \n Kullanıcı: ${kullanici.user} (\`${kullanici.user.id}\`) `));
 kullanici.roles.remove(manager.Role.JailRolID)
 message.guild.roles.cache.forEach(async r => {
 let roller = data.fetch(`${message.guild.id}.jail.${kullanici.id}.roles.${r.id}` )
