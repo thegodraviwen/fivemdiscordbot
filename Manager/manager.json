@@ -1,0 +1,19 @@
+{
+    "Authorized": {
+        "BanYetkilisiID": "BANYETKİLİSİID",
+        "JailYetkilisiID": "JAİLYETKİLİSİID",
+        "MuteYetkilisiID": "MUTEYETKİLİSİID",
+        "VMuteYetkilisiID": "VMUTEYETKİLİSİID"
+    },
+    "Logger": {
+        "BanLogID": "BANLOGKANALID",
+        "JailLogID": "JAİLLOGKANALID",
+        "MuteLogID": "MUTELOGKANALID",
+        "VMuteLogID": "VMUTELOGKANALID"
+    },
+    "Role": {
+        "JailRolID": "JAİLROLID",
+        "MuteRolID": "MUTEROLID",
+        "BoosterRolID": "BOOSTEROLID"
+    }
+}
